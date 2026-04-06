@@ -1,25 +1,12 @@
-package com.mt.sample;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+package com.mt.sample.test;
 
-/**
- * Hello world!
- *
- */
-import java.util.Date;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class HelloWorld {
+public class HelloWorldTest {
 
-	public static void main(String[] args) {
-		System.out.println("Hello Welcome to Maven Build Tool !! Today Date is:  " + getLocalCurrentDate());
-
-	}
-
-	private static Date getLocalCurrentDate() {
-		String m = "Mithun Technologies";
-		return new Date();
-
-	}
-
+    @Test
+    void testApp() {
+        assertTrue(true);
+    }
 }
